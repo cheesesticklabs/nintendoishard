@@ -1,5 +1,4 @@
-// Arcade game areas intentionally start empty. Add a compatible MAME 2003
-// arcade ROM-set ZIP at rom and set engine:'mame2003' when ready.
+// NES files use JSNES. Arcade ZIPs use the bundled compressed local player.
 window.LESSON_GAMES = {
   castlevania: { title: 'Castlevania', platform: 'NES', rom: 'roms/castlevania.nes', cover:'assets/castlevania.png', engine:'nes', focus:'Watch attack timing and what happens after a hit.' },
   ninja: { title: 'Ninja Gaiden', platform: 'NES', rom: 'roms/ninja-gaiden.nes', cover:'assets/ninja-gaiden.png', engine:'nes', focus:'Watch enemy placement, movement, and recovery.' },
@@ -10,5 +9,7 @@ window.LESSON_GAMES = {
   contraArcade: { title: 'Contra', platform: 'Arcade', rom: 'roms/contra.zip', cover:'assets/contra-arcade.png', engine:'mame2003' },
   contraNes: { title: 'Contra', platform: 'NES', rom:'roms/contra.nes', cover:'assets/contra.png', engine:'nes' },
   ghostsArcade: { title: 'Ghosts ’n Goblins', platform: 'Arcade', rom: 'roms/gng.zip', engine:'mame2003' },
-  ghostsNes: { title: 'Ghosts ’n Goblins', platform: 'NES', rom: '', engine:'nes' }
+  pacArcade: { title:'Pac-Man (Puck Man)', platform:'Arcade', rom:'roms/puckman.zip', cover:'assets/pac-man-arcade.png', engine:'mame2003' },
+  msPacArcade: { title:'Ms. Pac-Man', platform:'Arcade', rom:'roms/mspacman.zip', cover:'assets/ms-pac-man-arcade.png', engine:'mame2003' },
+  ghostsNes: { title: 'Ghosts ’n Goblins', platform: 'NES', rom: 'roms/ghosts-n-goblins.nes', cover:'assets/ghosts-n-goblins.png', engine:'nes' }
 };
